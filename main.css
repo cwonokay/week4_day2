@@ -1,0 +1,29 @@
+body{
+  background-color: #e4faef;
+
+}
+*{
+  /*border: 2px solid purple ;*/
+
+}
+div.Recipes{
+ width: 40vw;
+ padding-bottom: 40px;
+
+
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+img{
+  height: 200px;
+  width: 200px;
+  padding-top: 20px;
+}
+.button{
+  border-bottom: 3px solid purple;
+  padding-bottom: 20px;
+}
