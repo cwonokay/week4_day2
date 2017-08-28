@@ -1,7 +1,13 @@
 
+let button =document.getElementById('button');
 
-  fetch("https://recipepuppyproxy.herokuapp.com/api/?q=bacon")
+let search = document.getElementById('search');
 
+button.addEventListener("click", function (){
+
+  let bar = "https://recipepuppyproxy.herokuapp.com/api/?q=" + search;
+
+  fetch(bar)
     .then(
 
    // The promise returns a response from the server.
@@ -20,8 +26,10 @@
  .catch(function(err) {
    console.log("Fetch Error :-S", err);
  });
+ });
 
- let display1 = document.querySelector('.container');
+let display1 = document.querySelector('.container');
+
 
  function displayfunction(data) {
 
