@@ -5,13 +5,14 @@ let search = document.getElementById('search');
 
 button.addEventListener("click", function (){
 
-  let bar = "https://recipepuppyproxy.herokuapp.com/api/?q=" + search;
+  let bar = "https://recipepuppyproxy.herokuapp.com/api/?q=" + search.value;
 
   fetch(bar)
     .then(
 
    // The promise returns a response from the server.
    function(response) {
+     console.log(search.value);
      // We process the response accordingly.
      if (response.status !== 200) {
        console.log(response.status);
